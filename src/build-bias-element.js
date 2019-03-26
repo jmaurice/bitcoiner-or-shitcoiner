@@ -8,7 +8,7 @@ const buildBiasElement = async username => {
 	const container = document.createElement('div');
 	container.innerHTML = `
 	<div class="ProfileCardBias ProfileCardStats">
-		<div style="text-align: center"><strong>Bitcoin or Shitcoiner?</strong></div>
+		<div style="text-align: center"><strong>Bitcoiner or Shitcoiner?</strong></div>
 	</div>`;
 	const biases = container.children[0];
 
