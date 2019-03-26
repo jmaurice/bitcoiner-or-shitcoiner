@@ -13,16 +13,16 @@ const calculateBias = data => {
 	const BIAS_MIN_THRESHOLD = 5;
 
 	// Create correctly ordered array of currency objects
-	let currencies = [];
+	let currencies = [
+		{ name: 'Bitcoiner', influence: 0 },
+		{ name: 'Shitcoiner', influence: 0 },
+	];
 	for (const symbol of SUPPORTED_CURRENCIES) {
 		const currency = data.clusters.find(cluster => cluster.abbr === symbol);
 
 		if (currency) {
-			currencies.push({
-				symbol: currency.abbr,
-				name: currency.display,
-				influence: currency.score
-			});
+			let i = Number(symbol != 'BTC');
+			currencies[i].influence = currency.score;
 		}
 	}
 
@@ -54,7 +54,7 @@ const calculateBias = data => {
 		.reduce((a, b) => a + b);
 
 	currencies = currencies.map(currency => {
-		const bias = (currency.bias / totalBiasSum) * 100;
+		const bias = Math.round((currency.bias / totalBiasSum) * 1000) / 10;
 
 		return {...currency, bias};
 	});

@@ -21,7 +21,16 @@
 .ProfileCardBias .bias-amount {
 	position: absolute;
 	top: 0;
-	left: 0;
 	height: 100%;
 	border-radius: 4px;
+}
+
+.ProfileCardBias .bias-left {
+	background-color: #1c9dec !important;
+	left: 0;
+}
+
+.ProfileCardBias .bias-right {
+	background-color: #ff0000 !important;
+	right: 0;
 }
