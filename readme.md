@@ -10,8 +10,8 @@ All data provided by [hive.one](https://hive.one).
 
 ## Install
 
-- [**Chrome** extension](https://chrome.google.com/webstore/detail/dcfdkmkdffaojlgdhpnhejhpfeobddog/)
-- [**Firefox** add-on](https://addons.mozilla.org/en-US/firefox/addon/coinflict-of-interest)
+- [**Chrome** extension](https://chrome.google.com/webstore/detail/enmonlhdmpipdodongkamhecipjaphcb/)
+- [**Firefox** add-on](https://addons.mozilla.org/addon/bitcoiner-or-shitcoiner/)
 - **Opera** extension: Use [this Opera extension](https://addons.opera.com/en/extensions/details/download-chrome-extension-9/) to install the Chrome version.
 
 ## Build from Source
